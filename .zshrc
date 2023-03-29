@@ -114,10 +114,6 @@ export NVM_DIR="$HOME/.nvm"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-<<<<<<< HEAD
-=======
 # set tab for zsh autocomplete 
-bindkey '^I' autosuggest-accept
-bindkey '^[[Z'   complete-word
-alias config='/usr/bin/git --git-dir=/Users/adam/.cfg/.git/ --work-tree=/Users/adam'
->>>>>>> 520c77ca309c56a0c090976961da0409881f66c5
+bindkey '^I' complete-word
+bindkey '^[[Z' autosuggest-accept
