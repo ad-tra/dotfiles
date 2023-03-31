@@ -107,8 +107,14 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-	use("glepnir/dashboard-nvim") -- dashbord custom
-
+	-- dahsboard screen that loads on startup
+	use({
+		"goolord/alpha-nvim",
+		lazy = true,
+		config = function()
+			require("adam.plugins.dashboard")
+		end,
+	})
 	if packer_bootstrap then
 		require("packer").sync()
 	end
