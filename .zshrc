@@ -117,3 +117,5 @@ export NVM_DIR="$HOME/.nvm"
 # set tab for zsh autocomplete 
 bindkey '^I' complete-word
 bindkey '^[[Z' autosuggest-accept
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
